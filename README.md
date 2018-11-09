@@ -9,4 +9,4 @@ ULN2003 Darlington array is used, as is shown in the picture below.
 In the configuration used, a buck convertor is added to step down the 12V LED
 power supply to 5V to power the ESP8266.
 
-![MQTT MediaLight hardware](MQTT-MediaLight.svg)
+![MQTT MediaLight hardware](MQTT-MediaLigh.svg)
