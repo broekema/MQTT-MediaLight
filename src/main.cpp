@@ -127,13 +127,16 @@ boolean reconnect_mqtt() {
 }
 
 void callback(char* topic, byte* payload, unsigned int length) {
+#ifdef DEBUG
   Serial.print("Message arrived [");
   Serial.print(topic);
   Serial.print("] ");
-  
+#endif  
   long value=0;
   for (unsigned int i=0;i<length;i++) {
+#ifdef DEBUG
     Serial.print((char)payload[i]);
+#endif
     value = value * 10;
     value = value + ((char)payload[i] - (char)'0');
   }
